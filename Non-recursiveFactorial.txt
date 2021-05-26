@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+unsigned long int factorial(long int n)
+{
+    unsigned res=n;;
+    while(n>1)
+    {
+        res *= --n;
+    }
+    return res;
+}
+int main()
+{
+    unsigned long int a = 10;
+    unsigned long ans = factorial(10);
+    printf("Factorial of %ld is %ld", a,ans);
+    return 0;
+}

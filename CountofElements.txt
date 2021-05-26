@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    const char string[] = "This is a null-terminating string.";
+
+    int count =0;
+    for(int i : string)
+    {
+        if(i==0)
+        break;
+        count++;
+    }
+    printf("The number of elements is %d", count);
+    
+
+    return 0;
+}

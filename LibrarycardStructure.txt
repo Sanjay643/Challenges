@@ -1,0 +1,36 @@
+#include <iostream>
+#include<stdio.h>
+
+using namespace std;
+
+struct CardLog
+{
+    const char* title;
+    const char* author;
+    const char* publisher;
+    const char* subject;
+    const char* isbn;
+    const char* oclc;
+    short int ddc1;
+    short int ddc2;
+    short int yearp;
+    short int yeara;
+    short int quantity;
+};
+
+int main()
+{
+    CardLog obj = {"Harry potter","Harry","Guides","Story","15876677879","876653",540,76,2000,2002,100};
+    printf("Title is %s\n",obj.title);
+    printf("Author is %s\n",obj.author);
+    printf("Publisher is %s\n",obj.publisher);
+    printf("Subject is %s\n",obj.subject);
+    printf("Isbn is %s\n",obj.isbn);
+    printf("Oclc is %s\n",obj.oclc);
+    printf("Dewey Decimal is %d.%d\n",obj.ddc1,obj.ddc2);
+    printf("year published is %d\n",obj.yearp);
+    printf("year acquired is %d\n",obj.yeara);
+    printf("quantity is %d\n",obj.quantity);
+    
+    return 0;
+}
